@@ -41,5 +41,17 @@ class ComposerServiceProvider extends ServiceProvider
 
             return $view->with('popularPost', $popularPost);
         });
+
+        view()->composer('frontend.includes.indexPopular', function ($view){
+            $latestPost = Post::published()->popular()->take(2)->get();
+
+            return $view->with('latestPost', $latestPost);
+        });
+
+        view()->composer('frontend.includes.footerPopular', function ($view){
+            $latestPost = Post::published()->popular()->take(2)->get();
+
+            return $view->with('latestPost', $latestPost);
+        });
     }
 }

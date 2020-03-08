@@ -13,7 +13,7 @@
                         <ol class="breadcrumb">
                             <li><a href="/">home</a></li>
                             <li>।</li>
-                            <li>sports news</li>
+                            <li><a href="{{route('blog.index')}}">sports news</a></li>
                             <li>|</li>
                             <li>{{$categoryName}}</li>
                         </ol>
@@ -67,9 +67,9 @@
                                 <h3>{{$post->title}}</h3>
                                 <p>By <span>{{$post->user->name}}</span> / {{$post->published_at->diffForHUmans()}} / 3 Comments / Categories: <a href="{{route('category', $post->category->id)}}"> <span>{{$post->category->name}}</span></a></p>
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ea id, voluptate, iusto, ullam quos maiores animi quo tempore laboriosam laborum magni aliquam molestias aperiam ut libero ipsam sequi harum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ipsum excepturi, ad unde laudantium voluptatum fugiat molestiae in tempore, deserunt hic quibusdam, non nam quaerat eligendi ipsam laboriosam. Facilis, excepturi.</p>
+                            <p>{{$post->body}}</p>
                             <div class="news-btn mt40">
-                                <a href="#">read more</a>
+                                <a href="{{route('blog.show', $post->id)}}">read more</a>
                             </div>
 
                         </div>

@@ -16,10 +16,15 @@
 //});
 
 Route::resource('/', 'FrontendController');
+
 Route::resource('/blog', 'BlogController');
 Route::get('/category/{category}', [
     'uses' => 'BlogController@category',
     'as' => 'category']);
+
+Route::resource('/team', 'TeamController');
+Route::resource('/player', 'PlayerController');
+Route::resource('/fixture', 'FixturesController');
 
 
 

@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Fixture;
 use Illuminate\Http\Request;
 
-class FrontendController extends Controller
+class FixturesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +15,8 @@ class FrontendController extends Controller
     public function index()
     {
         //
-        $fixtures = Fixture::all()->take(4);
-        return view('frontend.index', compact('fixtures'));
+        $fixtures = Fixture::all();
+        return view('frontend.fixture.index', compact('fixtures'));
     }
 
     /**

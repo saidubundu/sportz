@@ -1,7 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4fc86396-7d39-49f3-9f41-1b27f81dbba0" name="Default Changelist" comment="" />
+    <list default="true" id="4fc86396-7d39-49f3-9f41-1b27f81dbba0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Fixture.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/FixturesController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/PlayerController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/TeamController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Player.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Position.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Team.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_06_020915_create_teams_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_07_195117_create_players_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_07_205812_create_positions_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_07_224816_create_fixtures_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/FixturesTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/PlayersTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/PositionsTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/TeamsTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/logo/logotrans.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/logo/slogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/player/player-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/player/player-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/player/player-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/player/player-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/player/player-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/player/player-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/player/player-7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/player/player-8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/squad/squad-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/squad/squad-10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/squad/squad-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/squad/squad-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/squad/squad-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/squad/squad-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/squad/squad-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/squad/squad-7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/squad/squad-8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/squad/squad-9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/frontend/fixture/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/frontend/includes/footerPopular.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/frontend/includes/indexPopular.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/frontend/player/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/frontend/team/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/frontend/team/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/sportz/clublist grid.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FrontendController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FrontendController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/ComposerServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/ComposerServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/club-logo/logo/alves.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/club-logo/logo-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/club-logo/logo/arsenal.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/club-logo/logo-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/club-logo/logo/atletico.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/club-logo/logo-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/club-logo/logo/barcelona.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/club-logo/logo-4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/club-logo/logo/chelsea.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/club-logo/logo-5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/club-logo/logo/everton.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/club-logo/logo-6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/club-logo/logo/getafe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/club-logo/logo/italy.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/club-logo/logo-8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/club-logo/logo/malaga.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/club-logo/logo-9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/club-logo/logo/mancity.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/club-logo/logo-10.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/club-logo/logo/manutd.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/club-logo/logo-11.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/club-logo/logo/mexico.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/club-logo/logo-12.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/club-logo/logo/realbetis.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/club-logo/logo-13.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/club-logo/logo/realmadrid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/club-logo/logo/sevilla.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/club-logo/logo-15.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/club-logo/logo/spain.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/club-logo/logo-16.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/club-logo/logo/villarreal.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/club-logo/logo-17.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/club-logo/logo/watford.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/club-logo/logo-18.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/player/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/player/player-9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/player/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/player/player-10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/player/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/player/player-11.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/player/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/player/player-12.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/player/news/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/player/pitch/pitch-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/player/news/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/player/pitch/pitch-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/blog/categoryPage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/blog/categoryPage.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/frontend.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/frontend.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +95,9 @@
         <option value="blade" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -123,27 +202,33 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1YO73Two5h8CFEoy6VZFDk1UBqT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/frontend/blog" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images/player" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Sportz\public\images\club-logo" />
       <recent name="C:\xampp\htdocs\Sportz\public" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\Sportz\resources\views\frontend\blog" />
-      <recent name="C:\xampp\htdocs\Sportz\public\frontend\images\blog" />
-      <recent name="C:\xampp\htdocs\Sportz\resources\views\frontend" />
-      <recent name="C:\xampp\htdocs\Sportz\public\frontend" />
-      <recent name="C:\xampp\htdocs\Sportz\resources\views" />
+      <recent name="C:\xampp\htdocs\Sportz\public\images\player" />
+      <recent name="C:\xampp\htdocs\Sportz\resources\views\sportz" />
+      <recent name="C:\xampp\htdocs\Sportz\public\images\club-logo" />
+      <recent name="C:\xampp\htdocs\Sportz\public\images\squad" />
+      <recent name="C:\xampp\htdocs\Sportz\public\images" />
     </key>
   </component>
   <component name="RunManager">
@@ -177,17 +262,30 @@
       <workItem from="1582801589804" duration="3234000" />
       <workItem from="1583111404431" duration="727000" />
       <workItem from="1583421707336" duration="5958000" />
-      <workItem from="1583433396138" duration="21660000" />
+      <workItem from="1583433396138" duration="23582000" />
+      <workItem from="1583459431558" duration="4314000" />
+      <workItem from="1583487978711" duration="24852000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="371" y="117" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1583450314627">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="371" y="117" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.720/1920.0.1920.1080@0.0.1280.720" timestamp="1583450314627" />
+    <state x="275" y="153" width="1035" height="737" key="dock-window-1" timestamp="1583488133968">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="275" y="153" width="1035" height="737" key="dock-window-1/0.0.1280.720/1920.0.1920.1080@0.0.1280.720" timestamp="1583488133968" />
+    <state x="351" y="209" width="940" height="677" key="dock-window-2" timestamp="1583623214869">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="351" y="209" width="940" height="677" key="dock-window-2/0.0.1280.720/1920.0.1920.1080@0.0.1280.720" timestamp="1583623214869" />
   </component>
 </project>

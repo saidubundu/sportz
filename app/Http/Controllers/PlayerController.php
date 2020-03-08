@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Fixture;
+use App\Player;
 use Illuminate\Http\Request;
 
-class FrontendController extends Controller
+class PlayerController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +15,6 @@ class FrontendController extends Controller
     public function index()
     {
         //
-        $fixtures = Fixture::all()->take(4);
-        return view('frontend.index', compact('fixtures'));
     }
 
     /**
@@ -49,6 +47,8 @@ class FrontendController extends Controller
     public function show($id)
     {
         //
+        $player = Player::with('team','position')->findOrFail($id);
+        return view('frontend.player.show', compact('player'));
     }
 
     /**

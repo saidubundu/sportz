@@ -68,7 +68,7 @@
                     <div class="row">
                         <div class="col-lg-3">
                             <div class="navbar-header">
-                                <a class="navbar-brand" href="index.html"><img src="assets/images/logo/logo.png"  alt="BEFIT logo"></a>
+                                <a class="navbar-brand" href="index.html"><img src="{{asset('images/logo/slogo.png')}}"  alt="BEFIT logo"></a>
 								<button class="navbar-toggler d-md-inlline d-xl-none" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 									<span class="fa fa-bars"></span>
 								</button>
@@ -83,10 +83,10 @@
                                             <a class="nav-link " href="/" >home</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="clublist.html">clublist</a>
+                                            <a class="nav-link" href="{{route('team.index')}}">clublist</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link " href="fixtures.html">fixtures</a>
+                                            <a class="nav-link " href="{{route('fixture.index')}}">fixtures</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="results.html">results</a>
@@ -95,7 +95,7 @@
                                             <a class="nav-link" href="point-table.html">point table</a>
                                         </li>
                                         <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="{{route('blog.index')}}">sports</a>
+                                            <a class="nav-link" href="{{route('blog.index')}}">news</a>
                                         </li>
                                         <li class="nav-item ">
                                             <a class="nav-link " href="#">more</a>
@@ -209,7 +209,7 @@
                         <div class="col-md-12">
                             <div class="slider-schedule">
                                 <div class="player-img">
-                                    <img src="assets/images/match-fixtures/yellow-player.png" alt="player img">
+                                    <img src="{{asset('images/match-fixtures/yellow-player.png')}}" alt="player img">
                                 </div>
                                 <div class="club-box">
                                     <div class="playing-schedule">
@@ -299,27 +299,16 @@
                                         <h4> <span>upcomming matches</span></h4>
                                     </div>
                                     <div class="upmatches-slider owl-carousel">
+                                        @foreach($fixtures as $fixture)
                                         <div class="upmatch-box mt20 overlay">
-                                            <img class="full-width " src="assets/images/upcomming-matches/2.jpg" alt="coming match">
+                                            <img class="full-width " src="{{asset('images/upcomming-matches/1.jpg')}}" alt="coming match">
                                             <div class="team-date">
-                                                <h5>brazil vs portugal</h5>
-                                                <p>20-08-2018 on Star Sports 3 HD</p>
+                                                <h5>{{$fixture->homeTeam->name}} vs {{$fixture->awayTeam->name}}</h5>
+                                                <p>{{$fixture->date}} at {{$fixture->pitch}}</p>
                                             </div>
                                         </div>
-                                        <div class="upmatch-box mt20 overlay">
-                                            <img class="full-width " src="assets/images/upcomming-matches/1.jpg" alt="coming match">
-                                            <div class="team-date">
-                                                <h5>brazil vs argentina</h5>
-                                                <p>20-08-2018 on Star Sports 3 HD</p>
-                                            </div>
-                                        </div>
-                                        <div class="upmatch-box mt20 overlay">
-                                            <img class="full-width " src="assets/images/upcomming-matches/2.jpg" alt="coming match">
-                                            <div class="team-date">
-                                                <h5>argentina vs portugal</h5>
-                                                <p>20-08-2018 on Star Sports 3 HD</p>
-                                            </div>
-                                        </div>
+                                            @endforeach
+
                                     </div>
                                 </div>
                             </div>
@@ -353,34 +342,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-12 col-lg-7">
-                                <div class="post-area mt60">
-                                    <div class="section-title">
-                                        <h4> <span>latest post</span></h4>
-                                    </div>
-                                    <div class="banner-img overlay mt40">
-                                        <img class="full-width" src="assets/images/bg-banner/bnr3.png" alt="banner-img">
-                                        <p>24.07.17</p>
-                                        <h4><a href="#">Boro player diagnosed <br> with leukemia</a></h4>
-                                    </div>
-                                    <div class="match-news  mt30">
-                                        <img src="assets/images/player/news/1.jpg" alt="player img">
-                                        <div class="news">
-                                            <p>24.07.17</p>
-                                            <h4><a href="#">Mkhi backs himself to improve.</a></h4>
-                                            <p class="nws">Appareat instuctior at. In sadip scing ct. vim an diam consequat deseruisse.</p>
-                                        </div>
-                                    </div>
-                                    <div class="match-news  mt30">
-                                        <img src="assets/images/player/news/2.jpg" alt="player img">
-                                        <div class="news">
-                                            <p>26.07.17</p>
-                                            <h4><a href="#">City confirm Mendy signing.</a></h4>
-                                            <p class="nws">Appareat instuctior at. In sadip scing ct. vim an diam consequat deseruisse.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            @include('frontend.includes.indexPopular')
                             <div class="col-md-12 col-lg-5">
                                 <!--scores-tab area start-->
                                 <div class="scores-tab mt60">
@@ -1033,7 +995,7 @@
                             <div class="footer-box pt60">
                                 <div class="footer-content add">
                                     <div class="footer-logo footer-content">
-                                        <img src="assets/images/logo/logo.png" alt="footer logo">
+                                        <img src="{{asset('images/logo/logotrans.png')}}" alt="footer logo">
                                     </div>
                                     <p class="pt30">Lorem ipsum dolor sit amet, ei ubique fastidii vim. Elitr feugait complectitur eu pro, sea audire ponderum eleifend cu. Vim at fuisset.</p>
                                     <div class="add-info">
@@ -1055,25 +1017,7 @@
                                         <a href="#">Cricket365</a>
                                     </div>
                                 </div>
-                                <div class="footer-content">
-                                    <div class="ftr-title xs-mt-40">
-                                        <h4>latest post</h4>
-                                    </div>
-                                    <div class="news-info pt30">
-                                        <div class="news-detail nws-bar zoom">
-                                            <img src="assets/images/footer/1.jpg" alt="footer img">
-                                            <p>Set yourself the challenge of doing the bare minimum.</p>
-                                        </div>
-                                        <div class="news-detail zoom">
-                                            <img src="assets/images/footer/2.jpg" alt="footer img">
-                                            <p>Body fat percentage: what does it really mean?</p>
-                                        </div>
-                                        <div class="news-detail zoom">
-                                            <img src="assets/images/footer/3.jpg" alt="footer img">
-                                            <p class="mb-0">This treatment sounded just what I was looking for.</p>
-                                        </div>
-                                    </div>
-                                </div>
+                                @include('frontend.includes.footerPopular')
                                 <div class="footer-content">
                                     <div class="ftr-title xs-mt-40">
                                         <h4>football</h4>
@@ -1111,7 +1055,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h4>Copyright © 2018 designed by <span>iThemeslab.</span> All Rights Reserved</h4>
+                            <h4>Copyright © {{\Carbon\Carbon::now()->year}}  <span>PeekTower</span> All Rights Reserved</h4>
                         </div>
                         <!--col end-->
                     </div>

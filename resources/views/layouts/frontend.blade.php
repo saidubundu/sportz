@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Sportzen - Sports club & magazine HTML template</title>
+    <title>SlSportz</title>
     <meta name="author" content="iThemesLab">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -71,7 +71,7 @@
                 <div class="row">
                     <div class="col-lg-3">
                         <div class="navbar-header">
-                            <a class="navbar-brand" href="index.html"><img src="assets/images/logo/logo.png"
+                            <a class="navbar-brand" href="index.html"><img src="{{asset('images/logo/logotrans.png')}}"
                                                                            alt="BEFIT logo"></a>
                             <button class="navbar-toggler d-md-inlline d-xl-none" type="button" data-toggle="collapse"
                                     data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
@@ -85,16 +85,10 @@
                             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                                 <ul class="navbar-nav ml-auto">
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="index.html" data-toggle="dropdown"
-                                           aria-haspopup="true" role="button" aria-expanded="false">home</a>
-                                        <div class="dropdown-menu animation  slideUpIn">
-                                            <a class="dropdown-item" href="index.html">home1</a>
-                                            <a class="dropdown-item" href="home2.html">home2</a>
-                                            <a class="dropdown-item" href="home3.html">home3</a>
-                                        </div>
+                                        <a class="nav-link " href="/">home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="clublist.html">clublist</a>
+                                        <a class="nav-link" href="{{route('team.index')}}">clublist</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link " href="fixtures.html">fixtures</a>
@@ -105,14 +99,8 @@
                                     <li class="nav-item">
                                         <a class="nav-link" href="point-table.html">point table</a>
                                     </li>
-                                    <li class="nav-item dropdown active">
-                                        <a class="nav-link dropdown-toggle" href="index.html" data-toggle="dropdown"
-                                           aria-haspopup="true" role="button" aria-expanded="false">sports</a>
-                                        <div class="dropdown-menu animation  slideUpIn">
-                                            <a class="dropdown-item" href="sports.html">sports</a>
-                                            <a class="dropdown-item" href="sports2.html">sports 2</a>
-                                            <a class="dropdown-item" href="single-page.html">single page</a>
-                                        </div>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{route('blog.index')}}" >news</a>
                                     </li>
                                     <li class="nav-item ">
                                         <a class="nav-link " href="#">more</a>
@@ -186,7 +174,7 @@
                         <div class="footer-box pt60">
                             <div class="footer-content add">
                                 <div class="footer-logo footer-content">
-                                    <img src="assets/images/logo/logo.png" alt="footer logo">
+                                    <img src="{{asset('images/logo/logotrans.png')}}" alt="footer logo">
                                 </div>
                                 <p class="pt30">Lorem ipsum dolor sit amet, ei ubique fastidii vim. Elitr feugait
                                     complectitur eu pro, sea audire ponderum eleifend cu. Vim at fuisset.</p>
@@ -213,25 +201,7 @@
                                     <a href="#">Cricket365</a>
                                 </div>
                             </div>
-                            <div class="footer-content">
-                                <div class="ftr-title xs-mt-40">
-                                    <h4>latest post</h4>
-                                </div>
-                                <div class="news-info pt30">
-                                    <div class="news-detail nws-bar zoom">
-                                        <img src="assets/images/footer/1.jpg" alt="footer img">
-                                        <p>Set yourself the challenge of doing the bare minimum.</p>
-                                    </div>
-                                    <div class="news-detail zoom">
-                                        <img src="assets/images/footer/2.jpg" alt="footer img">
-                                        <p>Body fat percentage: what does it really mean?</p>
-                                    </div>
-                                    <div class="news-detail zoom">
-                                        <img src="assets/images/footer/3.jpg" alt="footer img">
-                                        <p class="mb-0">This treatment sounded just what I was looking for.</p>
-                                    </div>
-                                </div>
-                            </div>
+                            @include('frontend.includes.footerPopular')
                             <div class="footer-content">
                                 <div class="ftr-title xs-mt-40">
                                     <h4>football</h4>
@@ -267,7 +237,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h4>Copyright © 2018 designed by <span>iThemeslab.</span> All Rights Reserved</h4>
+                        <h4>Copyright © {{\Carbon\Carbon::now()->year}}  <span>PeekTower</span> All Rights Reserved</h4>
                     </div>
                 </div>
             </div>
